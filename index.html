@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Firebase Web Push Notification Example</h2>
+
+<p id="token"></p>
+<script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-messaging.js"></script>
+<script>
+    /**
+     * Aşağıdaki Bilgileri Firebase Uygulama Oluşturduğunuzda Size Otomatik olarak Verilmektedir.
+     * */
+    var firebaseConfig = {
+        apiKey: "AIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",         // API Key
+        authDomain: "fcm-XXXXXXXXXXXXXXXXXXXX.firebaseapp.com",         // FCM Domain
+        databaseURL: "https://fcm-XXXXXXXXXXXX.firebaseio.com",         // FCM Database Url
+        projectId: "XXXXXXXXXX",                                        // FCM Project ID
+        storageBucket: "XXXXXXXXXXXXXXX.appspot.com",                   // FCM StoreBucket 
+        messagingSenderId: "XXXXXXXXXX",                                // Messaging ID
+        appId: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",             // APP ID
+        measurementId: "G-XXXXXXXX"                                     // MeasurementId
+    };
+    firebase.initializeApp(firebaseConfig);
+    const messaging=firebase.messaging();
+
+</script>
+<script src="fcm.js"></script>
+</body>
+</html>
